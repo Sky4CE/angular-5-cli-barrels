@@ -13,8 +13,8 @@ import * as CoreServices from './services';
 		HttpModule
 	],
 	providers: [
-		Core.Services.AuthService,
-		// CoreServices.AuthService // <<<--- THIS DECLARATION WOULD WORK WITH AOT
+		// Core.Services.AuthService,
+		CoreServices.AuthService // <<<--- THIS DECLARATION WOULD WORK WITH AOT
 	]
 })
 export class CoreModule {
